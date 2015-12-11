@@ -32,7 +32,7 @@
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.bbkmobile.iqoo.vivoshop.core.*.dao,com.bbkmobile.iqoo.vivoshop.core.*.model.mapper"/>
+        <property name="basePackage" value="cn.gov.syaudit.company.dao"/>
     </bean>
 
 </beans>
