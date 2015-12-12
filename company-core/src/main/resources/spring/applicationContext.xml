@@ -7,10 +7,12 @@
 
     <context:component-scan base-package="cn.gov.syaudit.company.dao"/>
 
+    <context:property-placeholder location="classpath:/config/*.properties"/>
+
     <!--数据库配置-->
     <import resource="classpath:spring/spring-mybatis.xml"/>
 
     <!--redis配置-->
-    <import resource="classpath:spring/spring-redis.xml"/>
+    <!--<import resource="classpath:spring/spring-redis.xml"/>-->
 
 </beans>
