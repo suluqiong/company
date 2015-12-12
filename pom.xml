@@ -361,6 +361,26 @@
         <!--</dependency>-->
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <redis.host>127.0.0.1</redis.host>
+                <redis.port></redis.port>
+                <redis.password></redis.password>
+                <jdbc.url>jdbc:mysql://localhost:3306/syaudit?useUnicode=true&amp;amp;autoReconnect=true&amp;amp;characterEncoding=UTF8</jdbc.url>
+                <jdbc.username>root</jdbc.username>
+                <jdbc.password>root@123</jdbc.password>
+                <maxPoolSize>5</maxPoolSize>
+                <minPoolSize>1</minPoolSize>
+                <initialPoolSize>1</initialPoolSize>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <pluginManagement>
             <plugins>
